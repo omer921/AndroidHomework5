@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        android:id="@+id/pictureView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:id="@+id/title"
+        android:layout_toRightOf="@id/pictureView"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"/>
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingView"
+        android:layout_below="@id/pictureView"
+        android:numStars="5"
+        android:contextClickable="false"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:layout_below="@id/ratingView"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/year"
+        android:layout_below="@id/title"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@id/pictureView"/>
+
+</RelativeLayout>
